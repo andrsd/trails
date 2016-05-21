@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section>
+  <div class="divider"></div>
+  <div><strong>All trails</strong></div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li style="padding: 0 0 0.5em 0">
+      <div class="post-date">
+        <span>{{ post.date | date: "%b %d, %Y" }}</span>
+      </div>
+      <div class="title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </div>
+      <div style="font-size: 80%">
+        {{ post.type }} &#9679;
+        {{ post.difficulty }} &#9679;
+        {{ post.distance }} km
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% include footer.html %}
+</section>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section>
+  <div class="divider"></div>
+  <div><strong>Newly added</strong></div>
+  <ul class="post-list">
+    {{ num_posts = 3 }}
+    {% for post_idx in (0..2) %}
+    {% if post_idx < paginator.total_posts %}
+      <li style="padding: 0 0 0.5em 0">
+        <div class="post-date">
+          <span>{{ site.posts[post_idx].date | date: "%b %d, %Y" }}</span>
+        </div>
+        <div class="title">
+          <a href="{{ site.posts[post_idx].url | prepend: site.baseurl }}">{{ site.posts[post_idx].title }}</a>
+        </div>
+        <div style="font-size: 80%">
+          {{ site.posts[post_idx].type }} &#9679;
+          {{ site.posts[post_idx].difficulty }} &#9679;
+          {{ site.posts[post_idx].distance }} km
+        </div>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% include footer.html %}
+</section>
