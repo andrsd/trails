@@ -20,6 +20,7 @@ getting-there: >
   From Idaho Falls, ID, take state highway 20 west. After around 20 miles turn left onto a dirt
   road that goes to the trailhead parking lot.  The turn is marked as Lavarock Hiking Trail.
 online-directions: https://goo.gl/maps/Wts2U1rzP2N2
+comments: true
 ---
 
 This is one of the trails that you can hie early in the season. Sometimes as early as March.  It
