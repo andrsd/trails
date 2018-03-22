@@ -20,4 +20,5 @@ getting-there: >
   From Waimea, HI take state highway 550 to Koke'e State Park. After about 15 miles the trailhead
   parking will be on your left.
 online-directions: https://goo.gl/maps/dMrYiVsCiPG2
+comments: true
 ---

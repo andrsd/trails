@@ -21,6 +21,7 @@ getting-there: >
   In Victor, ID turn north onto state highway 33 towards Driggs, ID.  Drive for about 3.3 miles and
   turn onto W 5000 S.  Stay on this road for about 4 miles until you get to the parking lot.
 online-directions: https://goo.gl/maps/m1VxwrJHDKy
+comments: true
 ---
 
 __Before you go__: This trail does not get a lot of traffic, so it is not very easy to follow it.

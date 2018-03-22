@@ -21,4 +21,5 @@ tags:
 getting-there: >
   From Moose, WY go in the Grand Teton National Park. Take the Teton Park Rd to Lupine Meadows
   Junction. Follow the signs to Lupine Meadows Trailhead.
+comments: true
 ---

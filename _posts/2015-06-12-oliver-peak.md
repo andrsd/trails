@@ -21,6 +21,7 @@ getting-there: >
   From Victor, ID take state highway 33 towards Jackson, WY. After about 4 miles turn right onto
   Forest Road 239. Follow the signs for Mike Harris Campground.
 online-directions: https://goo.gl/maps/TumdVisoFr32
+comments: true
 ---
 
 This can be hiked fairly early in the season, but there will be snow in the higher elevations.

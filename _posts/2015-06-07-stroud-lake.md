@@ -21,6 +21,7 @@ tags:
 getting-there: >
 
 online-directions:
+comments: true
 ---
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/101945058@N06/17940062804/in/photolist-tkivDE" title="Stroud Lake"><img src="https://farm1.staticflickr.com/491/17940062804_62621654e5_z.jpg" width="480" height="640" alt="Stroud Lake"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

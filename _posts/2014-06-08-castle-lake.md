@@ -20,4 +20,5 @@ getting-there: >
   From Heise, ID go towards Kelly Canyon Ski Resort, turn left onto Forest Road 218 and stay on it
   for about 10 miles, then turn right onto Forest Road 651 whic will take yo uto the trailhead.
 online-directions: https://goo.gl/maps/G4e55xok2K42
+comments: true
 ---

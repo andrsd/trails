@@ -21,6 +21,7 @@ getting-there: >
   In Driggs, ID at the intersection with lights turn on Ski Hill Road and drive on the road for
   about 6 miles. Then, turn onto Teton Canyon Road that will take you to the trail head.
 online-directions: https://goo.gl/maps/Lmj32BdmitS2
+comments: true
 ---
 
 Usually, this trail is hiked as [In and Out]({{ site.baseurl }}{% post_url 2013-08-30-alaska-basin%}).

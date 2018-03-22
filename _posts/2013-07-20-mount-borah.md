@@ -21,6 +21,7 @@ getting-there: >
   From Mackay, ID take state highway 93 towards Challis. After 20 miles turn right onto Birch Spring
   Road (there will be a sign for Mount Borah)
 online-directions: https://goo.gl/maps/zoG7GVUaS7S2
+comments: true
 ---
 
 Mt. Borah is the highest peak in Idaho.  This hike is very difficult, because it is steep.  There

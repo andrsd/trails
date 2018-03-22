@@ -22,6 +22,7 @@ getting-there: >
   right onto W 5750 N. At the T-junction turn left onto N Baseline Rd and follow this road until
   N Stateline Rd. Turn left and continue on S Leigh Canyon Rd until you reach the trailhead.
 online-directions: https://goo.gl/maps/ze4d7kgg9u72
+comments: true
 ---
 
 __Before you go:__ There were changes in trail routing, so your map will probably show a different

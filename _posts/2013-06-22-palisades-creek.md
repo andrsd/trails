@@ -24,4 +24,5 @@ getting-there: >
   on this road to the trail head. When you get to the campground stay to the left to get to the
   trailhead.
 online-directions: https://goo.gl/maps/n226Bk8sfEn
+comments: true
 ---

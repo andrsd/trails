@@ -21,6 +21,7 @@ getting-there: >
   From Driggs ID, follow state highway 33 north for about 5.6 miles. Turn right onto N 500 W, then
   right onto W 5750 N.
 online-directions: https://goo.gl/maps/iTQwgRayNaQ2
+comments: true
 ---
 
 The trail is well defined and easy to follow all the way. If you do not want to do the whole "loop",

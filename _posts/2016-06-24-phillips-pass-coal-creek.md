@@ -21,6 +21,7 @@ getting-there: >
   In Victor, ID take state highway 33 into Jackson, WY.  Drive for about 13.5 miles to the trailhead
   parking lot (it is not marked, so make sure you check the map before you go).
 online-directions: https://goo.gl/maps/yPnqSaAP6UB2
+comments: true
 ---
 
 For this hike you will need a shuttle and possibly fording shoes. It is possible to ford all creeks

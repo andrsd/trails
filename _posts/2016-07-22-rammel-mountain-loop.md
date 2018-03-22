@@ -23,6 +23,7 @@ online-directions: https://goo.gl/maps/AhK85YqHvr52
 tags:
   - wyoming
   - hike
+comments: true
 ---
 
 __Before you go__: The first part of this hike (about 6 miles) follows a very faint trail. It

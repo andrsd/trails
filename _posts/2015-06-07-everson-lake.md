@@ -21,6 +21,7 @@ tags:
 getting-there: >
 
 online-directions:
+comments: true
 ---
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/101945058@N06/18534894256/in/photolist-ueSbjm" title="Everson Lake"><img src="https://farm9.staticflickr.com/8897/18534894256_f38811f0fa.jpg" width="500" height="375" alt="Everson Lake"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

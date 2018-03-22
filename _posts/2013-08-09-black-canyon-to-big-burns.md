@@ -20,4 +20,5 @@ getting-there: >
   From Heise, ID drive southeast on E Heise Road, after 1.3 miles turn right to stay on E Heise Rd.
   After 8 miles turn right to stay on E Heise Rd and follow the road to the trailhead.
 online-directions: https://goo.gl/maps/e17iBoCo15B2
+comments: true
 ---

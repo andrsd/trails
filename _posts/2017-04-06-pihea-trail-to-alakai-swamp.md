@@ -20,4 +20,5 @@ getting-there: >
   From Waimea, HI take state highway 550 to Koke'e State Park. After about 19 miles you get to the
   Pu'u O Kila lookout. The trial starts there.
 online-directions: https://goo.gl/maps/rmDnxATQmkt
+comments: true
 ---

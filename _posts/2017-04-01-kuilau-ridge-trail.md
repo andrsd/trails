@@ -20,4 +20,5 @@ getting-there: >
   From Wailua, HI take state highway 580 west. After about 6.5 miles the trailhead
   parking will be on your right.
 online-directions: https://goo.gl/maps/w8cYCKYiRf22
+comments: true
 ---

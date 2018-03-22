@@ -20,6 +20,7 @@ getting-there: >
   From Swan Valley ID, take state highway 26 towards Alpine, WY.  After 13.8 miles turn left onto
   Little Elk Creek Rd that will take you to the trail head.
 online-directions: https://goo.gl/maps/MN7vnaicEBm
+comments: true
 ---
 
 There are 2 trails starting here, this one is marked as \#151.

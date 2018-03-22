@@ -24,6 +24,7 @@ getting-there: >
   (about mile 12).  The road gets gradually worse. It should be doable with sedan. Easier when there
   was no rain.  4WD and high clearance vehicle is an advantage.
 online-directions: https://goo.gl/maps/jHk4svRsgxn
+comments: true
 ---
 
 The trail is an 4WD road going to the Mill Lake. It is easy to follow and there is no steep

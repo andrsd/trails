@@ -21,6 +21,7 @@ getting-there: >
   In Wayan, ID take state highway 34 north. After about 1.5 miles turn onto Grays Lake Rd for about
   9.3 miles. Turn right onto NF 118/Willow Creek Rd and continue for about 2 miles.
 online-directions: https://goo.gl/maps/x3ybT98AnAK2
+comments: true
 ---
 
 __Before you go__: This is not a marked trail. There is not really a trailhead or signs, so

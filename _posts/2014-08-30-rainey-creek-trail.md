@@ -21,4 +21,5 @@ getting-there: >
   Rainey Creek Rd and stay on it for about 2 miles. Then turn left and continue for 0.5 miles. turn
   left again continue on the road for 3.2 miles to the trailhead.
 online-directions: https://goo.gl/maps/rYJDrRJYNGn
+comments: true
 ---

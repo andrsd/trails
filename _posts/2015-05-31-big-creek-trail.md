@@ -22,6 +22,7 @@ getting-there: >
   In Ellis, ID take Pahsimeroi Rd south east through May and Patterson. After about 30 miles turn
   onto Forest Rd 097 towards Big Creek Campground.
 online-directions: https://goo.gl/maps/5ALkvDwijtu
+comments: true
 ---
 
 There is one difficult ford, especially early in the season, when the creek have a lot of water.
