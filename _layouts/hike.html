@@ -142,16 +142,11 @@ layout: compress
       <div>
         {{ page.content }}
       </div>
-
-      <div class="divider"></div>
-
+      {% include disqus.html %}
       </article>
-
       <div class="back">
         <a href="{{site.baseurl}}/">Back</a>
       </div>
-
-      {% include disqus.html %}
       {% include footer.html %}
     </main>
 
