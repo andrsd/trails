@@ -362,14 +362,14 @@ section {
   }
 }
 .footer {
-  text-align: center;
+  max-width: 500px;
+  margin: 24px auto 0 auto;
+  text-align: left;
   font-size: 50%;
-  margin-top: 24px;
 }
 .footer-social-links {
   font-size: 14px;
   text-align: center;
-  margin-top: 5px;
 }
 .footer-social-links a {
   padding: 3px 5px;

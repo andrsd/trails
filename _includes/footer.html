@@ -1,6 +1,14 @@
 <div class="footer">
-  <div class="footer-social-links" style="display: inline-block">
-    <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed" target="_blank"><i class="fa fa-rss"></i></a>
-  </div>
-  Using <a href="http://heiswayi.github.io/the-plain.html">the plain</a> template.
+    <div style="float: left">
+      <span class="footer-social-links" style="display: inline-block">
+        <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed" target="_blank"><i class="fa fa-rss"></i></a>
+      </span>
+    </div>
+    <div style="margin-left: 50px; padding-top: 9px; display: flex; justify-content: space-between; height: 20px">
+      <span>Using <a href="http://heiswayi.github.io/the-plain.html">the plain</a> template.</span>
+      <span>
+        <a target="_blank" href="https://github.com/andrsd/trails/issues/new?title={{ 'Error on page ' | append: page.url | url_encode }}&body={{ 'Please, describe what error you found so I can fix it. Thank you for reporting...' | url_encode }}">Found an error?</a>
+      </span>
+    </div>
 </div>
+<div style="clear: both;"></div>
