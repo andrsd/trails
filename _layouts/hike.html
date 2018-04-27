@@ -36,12 +36,12 @@ layout: compress
         'Point': new ol.style.Style({
           image: new ol.style.Circle({
             fill: new ol.style.Fill({
-              color: 'rgba(255,255,0,0.4)'
+              color: 'rgba(255,255,0,0.9)'
             }),
             radius: 5,
             stroke: new ol.style.Stroke({
-              color: '#ff0',
-              width: 1
+              color: '#000',
+              width: 2
             })
           })
         }),
@@ -59,7 +59,7 @@ layout: compress
         })
       };
 
-      var vector = new ol.layer.Vector({
+      var gpx = new ol.layer.Vector({
         source: new ol.source.Vector({
           url: '{{ site.baseurl }}{{ page.gpx }}',
           format: new ol.format.GPX()
@@ -69,8 +69,31 @@ layout: compress
         }
       });
 
+      var info = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          features: [
+            new ol.Feature({
+              geometry: new ol.geom.Point(ol.proj.fromLonLat([{{ page.start }}])),
+              name: "Trailhead"
+            })
+          ]
+        }),
+        style: new ol.style.Style({
+          image: new ol.style.Circle({
+            fill: new ol.style.Fill({
+              color: 'rgba(0,255,0,0.9)'
+            }),
+            radius: 5,
+            stroke: new ol.style.Stroke({
+              color: '#000',
+              width: 2
+            })
+          })
+        })
+      });
+
       var map = new ol.Map({
-        layers: [raster, vector],
+        layers: [raster, gpx, info],
         target: document.getElementById('map'),
         controls: ol.control.defaults({
           attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
