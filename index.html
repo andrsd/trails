@@ -9,6 +9,7 @@ layout: default
 <div id="info" style="width: 700px; margin: 0 auto; height: 80%">&nbsp;</div>
 <script type="text/javascript">
 
+var setMapLocation = true;
 var latlon = [ -111, 43.5 ];
 
 var raster = new ol.layer.Tile({
@@ -94,7 +95,9 @@ var geolocation = new ol.Geolocation({
 });
 geolocation.on('change', function(et) {
   var coordinate = geolocation.getPosition();
-  view.setCenter(coordinate);
+  if (setMapLocation) {
+    view.setCenter(coordinate);
+  }
 });
 
 var displayFeatureInfo = function(pixel) {
@@ -130,6 +133,10 @@ map.on('pointermove', function(evt) {
 
 map.on('click', function(evt) {
   clickTrailHead(evt.pixel);
+});
+
+map.on('moveend', function(evt) {
+  setMapLocation = false;
 });
 </script>
 
