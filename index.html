@@ -2,6 +2,137 @@
 layout: default
 ---
 
+<div style="width: 700px; margin: 1em auto;"></div>
+<link rel="stylesheet" href="http://openlayers.org/en/v3.16.0/css/ol.css" type="text/css">
+<script src="http://openlayers.org/en/v3.16.0/build/ol.js" type="text/javascript"></script>
+<div id="map" style="width: 700px; height: 400px; margin: 0 auto; border: 1px solid #888"></div>
+<div id="info" style="width: 700px; margin: 0 auto; height: 80%">&nbsp;</div>
+<script type="text/javascript">
+
+var latlon = [ -111, 43.5 ];
+
+var raster = new ol.layer.Tile({
+  source: new ol.source.OSM({
+    attributions: [
+      ol.source.OSM.ATTRIBUTION
+    ],
+    url: 'https://{a-c}.tile.opentopomap.org/{z}/{x}/{y}.png'
+  })
+});
+
+var style = {
+  'Point': new ol.style.Style({
+    image: new ol.style.Circle({
+      fill: new ol.style.Fill({
+        color: 'rgba(255,255,0,1)'
+      }),
+      radius: 5,
+      stroke: new ol.style.Stroke({
+        color: '#000',
+        width: 2
+      })
+    })
+  }),
+  'LineString': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: '#f00',
+      width: 3
+    })
+  }),
+  'MultiLineString': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: '#666',
+      width: 3
+    })
+  })
+};
+
+var clickTrailHead = function(pixel) {
+  var features = [];
+  map.forEachFeatureAtPixel(pixel, function(feature) {
+    features.push(feature);
+  });
+  if (features.length == 1) {
+    window.open("{{ site.baseurl }}/" + features[0].get('id'), "_self");
+  }
+};
+
+var trailheads = new ol.source.Vector({
+  features: [
+    {% for post in site.posts %}
+    new ol.Feature({
+      geometry: new ol.geom.Point(ol.proj.fromLonLat([{{ post.start }}])),
+      name: "{{ post.title }}",
+      details: " &#9679; {{ post.type }} &#9679; {{ post.difficulty }} &#9679; {{ post.distance }} km",
+      id: "{{ post.url }}"
+    }),
+    {% endfor %}
+  ]
+});
+
+var vector = new ol.layer.Vector({
+  source: trailheads,
+  style: function(feature) {
+    return style[feature.getGeometry().getType()];
+  }
+});
+
+var view = new ol.View({
+  center: ol.proj.fromLonLat(latlon),
+  zoom: 8
+});
+
+var map = new ol.Map({
+  layers: [raster, vector],
+  target: document.getElementById('map'),
+  view: view
+});
+
+var geolocation = new ol.Geolocation({
+  tracking: true,
+  projection: view.getProjection()
+});
+geolocation.on('change', function(et) {
+  var coordinate = geolocation.getPosition();
+  view.setCenter(coordinate);
+});
+
+var displayFeatureInfo = function(pixel) {
+  var features = [];
+  map.forEachFeatureAtPixel(pixel, function(feature) {
+    features.push(feature);
+  });
+  if (features.length == 1) {
+    document.getElementById('info').innerHTML = features[0].get('name') + features[0].get('details');
+    map.getTarget().style.cursor = 'pointer';
+  }
+  else if (features.length > 0) {
+    var info = [];
+    var i, ii;
+    for (i = 0, ii = features.length; i < ii; ++i) {
+      info.push(features[i].get('name'));
+    }
+    document.getElementById('info').innerHTML = info.join(', ') || '(unknown)';
+    map.getTarget().style.cursor = 'pointer';
+  } else {
+    document.getElementById('info').innerHTML = '&nbsp;';
+    map.getTarget().style.cursor = '';
+  }
+};
+
+map.on('pointermove', function(evt) {
+  if (evt.dragging) {
+    return;
+  }
+  var pixel = map.getEventPixel(evt.originalEvent);
+  displayFeatureInfo(pixel);
+});
+
+map.on('click', function(evt) {
+  clickTrailHead(evt.pixel);
+});
+</script>
+
 <section>
   <div class="divider"></div>
   <div><strong>Newly added</strong></div>
