@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<section>
+  <div class="divider"></div>
+  <div><strong>All trails</strong></div>
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+    <li style="padding: 0 0 0.5em 0">
+      <div class="post-date">
+        <span>{{ post.date | date: "%b %d, %Y" }}</span>
+      </div>
+      <div class="title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </div>
+      <div style="font-size: 80%">
+        {{ post.type }} &#9679;
+        {{ post.difficulty }} &#9679;
+        {{ post.distance }} km
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <div>&nbsp;</div>
+
+  <div class="pagination" style="font-size: 90%; text-align:center">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl}}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+
+
+
+
+</div>
+
+  {% include footer.html %}
+</section>
