@@ -1,0 +1,16 @@
+---
+layout: empty
+---
+[
+  {% for post in site.posts %}
+    {
+
+      "title"      : "{{ post.title | strip_html | escape }}",
+      "url"        : "{{ site.baseurl }}{{ post.url }}",
+      "tags"       : "{{ post.tags | join: ', ' }}",
+      "distance"   : "{{ post.distance }}",
+      "type"       : "{{ post.type }}",
+      "difficulty" : "{{ post.difficulty }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
