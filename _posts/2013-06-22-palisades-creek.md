@@ -1,7 +1,7 @@
 ---
 layout: hike
 title: Palisades Creek
-gpx: '/2017-07-01T08_08_52-600_Hiking.gpx'
+gpx: '/data/gps/2013-06-22-palisades-creek.gpx'
 map:
   center: '-111.16453960595696, 43.42159401201595'
   zoom: 12.8
