@@ -25,10 +25,10 @@ layout: compress
       <script type="text/javascript">
       var raster = new ol.layer.Tile({
         source: new ol.source.OSM({
+          url: 'http://mt{0-3}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
           attributions: [
-            ol.source.OSM.ATTRIBUTION
-          ],
-          url: 'https://{a-c}.tile.opentopomap.org/{z}/{x}/{y}.png'
+            new ol.Attribution({ html: '© Google <a href="https://developers.google.com/maps/terms">Terms of Use.</a>' })
+          ]
         })
       });
 
@@ -95,11 +95,6 @@ layout: compress
       var map = new ol.Map({
         layers: [raster, gpx, info],
         target: document.getElementById('map'),
-        controls: ol.control.defaults({
-          attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
-            collapsible: false
-          })
-        }),
         view: new ol.View({
           center: ol.proj.fromLonLat([{{ page.map.center }}]),
           zoom: {{ page.map.zoom }}

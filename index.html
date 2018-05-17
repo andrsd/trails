@@ -14,10 +14,10 @@ var latlon = [ -111, 43.5 ];
 
 var raster = new ol.layer.Tile({
   source: new ol.source.OSM({
+    url: 'http://mt{0-3}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
     attributions: [
-      ol.source.OSM.ATTRIBUTION
-    ],
-    url: 'https://{a-c}.tile.opentopomap.org/{z}/{x}/{y}.png'
+      new ol.Attribution({ html: '© Google <a href="https://developers.google.com/maps/terms">Terms of Use.</a>' })
+    ]
   })
 });
 
