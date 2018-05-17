@@ -33,13 +33,13 @@ rougher.
 
 Once on the road to the quarry, watch for this view.
 
-<img src="/images/160708-first-ford.jpg" width="500" alt="First ford"/>
+<img src="{{ site.baseurl }}/images/160708-first-ford.jpg" width="500" alt="First ford"/>
 
 You want to cross the creek to the other side somewhere in between the big boulder and the big tree
 on the right.  There is a sign behind the bush that says "Fox Creek Pass 10" and you will be on the
 trial.
 
-<img src="/images/160708-fox-creek.jpg" width="500" alt="Fox Creek"/>
+<img src="{{ site.baseurl }}/images/160708-fox-creek.jpg" width="500" alt="Fox Creek"/>
 
 I was able to hike for about 4 miles (6 km) when I got to a spot where I was not able to find how
 the trail continued, so I turned and headed back.  Along the hike, the trail would disappear and

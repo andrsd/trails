@@ -32,8 +32,8 @@ The first part of the trail climbs up to Phillips Pass and is very easy to follo
 Then if follows on the west side of the Teton Mountain Range in higher altitude, so count with snow
 fields earlier in the season. The trail is vanishing at spots, but it is not bad.
 
-<a href="/images/mountain-creek.jpg" title="Creek in Mountains" style="border: 0">
-  <img src="/images/mountain-creek-sm.jpg" width="500" alt="Creek in Mountains"/>
+<a href="{{ site.baseurl }}/images/mountain-creek.jpg" title="Creek in Mountains" style="border: 0">
+  <img src="{{ site.baseurl }}/images/mountain-creek-sm.jpg" width="500" alt="Creek in Mountains"/>
 </a>
 
 When you get to the most northern point, you hike downhill to meet the Moose Lake trail. If you have

@@ -32,13 +32,13 @@ The trail is quite well defined and easy to follow all the way to the lakes. If 
 do the whole "loop", just hike the southern fork (~ 4 miles / 6 km). That would be a very easy hike,
 good for kids. Obviously, the best views start showing up during the climb up.
 
-<img src="/images/160709-leigh-creek-valley.jpg" width="500" alt="Leigh Creek Valley"/>
+<img src="{{ site.baseurl }}/images/160709-leigh-creek-valley.jpg" width="500" alt="Leigh Creek Valley"/>
 
 The trail continues to the Granite Basin and passes by one of the lakes. It continues to the Green
 Lake and Green Mountain, but this options is more suitable for backpacking trip. I stopped by the
 lake and had lunch, then I headed back.
 
-<img src="/images/160709-granite-basin-lake.jpg" width="500" alt="Granite Basin Lake"/>
+<img src="{{ site.baseurl }}/images/160709-granite-basin-lake.jpg" width="500" alt="Granite Basin Lake"/>
 
 The trail back follow Andy Stone Creek, and offers some views of Grand Teton.
 
